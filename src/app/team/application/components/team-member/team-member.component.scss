@@ -1,0 +1,39 @@
+@import 'mixins';
+@import 'functions';
+@import 'variables';
+
+:host {
+    word-break: break-all;
+}
+
+.image {
+    display: block;
+    height: 0;
+    padding-bottom: 100%;
+    overflow: hidden;
+}
+
+.section {
+    margin: spacing(1);
+}
+
+.title {
+    @include font-size(medium);
+    color: $primary-color;
+    font-weight: 800;
+}
+
+.description {
+    @include font-size(medium);
+    color: $secondary-color;
+    font-weight: 600;
+}
+
+.link {
+    @include font-size(small);
+}
+
+.text {
+    @include font-size(small);
+    color: $secondary-color;
+}

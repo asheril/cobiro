@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~normalize.css';
+
+@import 'mixins';
+@import 'functions';
+@import 'variables';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @include font-size(medium);
+    font-family: 'Arial';
+    color: $primary-color;
+}
+
+h3 {
+    @include font-size(big);
+    margin: spacing(1) 0;
+    font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: $link-color;
+}

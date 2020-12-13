@@ -1,0 +1,22 @@
+@import 'mixins';
+@import 'functions';
+@import 'variables';
+
+:host {
+    width: 80%;
+}
+
+.title {
+    text-align: center;
+    color: $primary-color;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: spacing(2);
+
+    .item {
+        flex: 30% 0 0;
+    }
+}

@@ -1,0 +1,11 @@
+<app-image-url [imageUrl]="teamMember.imageUrl" [alt]="teamMember.title" class="image"></app-image-url>
+
+<div class="section">
+	<div class="title">{{ teamMember.title }}</div>
+	<div class="description">{{ teamMember.description }}</div>
+</div>
+
+<div class="section">
+	<a href="mailto:{{ teamMember.link }} " class="link">{{ teamMember.link }}</a>
+	<div class="text">{{ teamMember.text }}</div>
+</div>

@@ -1,0 +1,5 @@
+<h3 class="title">{{ team.title }}</h3>
+
+<div class="list">
+	<app-team-member *ngFor="let teamMember of team.teamMembers" [teamMember]="teamMember" class="item"></app-team-member>
+</div>
